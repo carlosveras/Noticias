@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICI.ProvaCandidato.Dados", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICI.ProvaCandidato.Negocio", "ICI.ProvaCandidato.Negocio\ICI.ProvaCandidato.Negocio.csproj", "{38A6982B-E8A5-480E-A5D0-5C35132DBF8E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICI.ProvaCandidato.UI", "ICI.ProvaCandidato.UI\ICI.ProvaCandidato.UI.csproj", "{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{38A6982B-E8A5-480E-A5D0-5C35132DBF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A6982B-E8A5-480E-A5D0-5C35132DBF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A6982B-E8A5-480E-A5D0-5C35132DBF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

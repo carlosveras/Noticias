@@ -46,8 +46,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
             if (id == null)
             {
                 ViewData["Acao"] = "Cadastro";
-                //return View("CadastroTag", new Tag());
-                return PartialView("_CadastroTag", new Tag());
+                return View("CadastroTag", new Tag());
             }
             else
             {
@@ -60,8 +59,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
                 catch (CustomException ex)
                 {
                     TempData["Message"] = ex.Mensagem;
-                    //return View("CadastroTag", tag);
-                    return PartialView("_CadastroTag", tag);
+                    return View("CadastroTag", tag);
                 }
 
                 if (tag == null)
@@ -70,8 +68,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
                 ViewData["Acao"] = "Edicao";
                 ViewData["Descricao"] = tag.Descricao;
 
-                //return View("CadastroTag", tag);
-                return PartialView("_CadastroTag", tag);
+                return View("CadastroTag", tag);
             }
         }
 
