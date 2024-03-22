@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ICI.ProvaCandidato.Dados.Entities.Tag>
+﻿ @model IEnumerable<ICI.ProvaCandidato.Dados.Entities.Tag>
 
 <h1 class="mt-1" style="font-size: 20px;">Tags</h1>
 
@@ -12,8 +12,7 @@
 
             <div class="col-md-6">
                 <div class="text-left">
-                    <button class="btn btn-sm btn-success my-2 my-sm-0 form-control form-control-sm" id="novaTag" asp-action="Cadastro" data-toggle="tooltip" title="Cadastrar uma Nova TAG">Nova Tag</button>
-                    <button class="btn btn-sm btn-success novaPessoa" id="novaTagModal" data-toggle="tooltip" title="Cadastrar uma Nova TAG">Nova Tag Modal</button>
+                    <button class="btn btn-sm btn-success my-2 my-sm-0 form-control form-control-sm" id="novaTag" asp-action="Cadastro" data-toggle="tooltip" title="Cadastrar tag">Nova tag</button>
                 </div>
             </div>
 
@@ -71,52 +70,10 @@
     }
 </div>
 
-<div id="modal" class="modal fade" role="dialog">
-
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h6 class="modal-title"></h6>
-            </div>
-
-            <div class="modal-body">
-                <input type="hidden" class="form-control form-control-sm pessoaId" />
-                <div class="form-group">
-                    <label>Nome</label>
-                    <input type="text" class="form-control form-control-sm nome" />
-                    <span class="text-danger erroNome d-none"></span>
-                </div>
-
-                <div class="form-group">
-                    <label>Idade</label>
-                    <input type="number" class="form-control form-control-sm idade" />
-                    <span class="text-danger erroIdade d-none">Digite um número</span>
-                </div>
-
-                <div class="form-group">
-                    <label>Profissão</label>
-                    <input type="text" class="form-control form-control-sm profissao" />
-                    <span class="text-danger erroProfissao d-none">Digite uma profissão</span>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <div class="form-group">
-                    <input type="button" value="Salvar" class="btn btn-sm btn-outline-success btnSalvar" />
-                    <input type="button" value="Cancelar" class="btn btn-sm btn-light" data-bs-dismiss="modal" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-
-
 @section scripts {
     @{
         await Html.RenderPartialAsync("_CustomConfirm");
+
     }
-   
 }
+

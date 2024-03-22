@@ -5,11 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Tags\" />
+    <Compile Remove="Views\Tags\**" />
+    <Content Remove="Views\Tags\**" />
+    <EmbeddedResource Remove="Views\Tags\**" />
+    <None Remove="Views\Tags\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
