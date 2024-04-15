@@ -1,0 +1,54 @@
+﻿@model ICI.ProvaCandidato.Dados.Entities.Tag
+
+<div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
+    @{
+        string oTexto = (string)ViewData["Acao"] == "Cadastro" ? "Cadastrar" : "Salvar";
+    }
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="cadastroModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="confirmarExclusaoElement" data-message="@TempData["Message"]" type="hidden"></div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <form asp-controller="Tag" asp-action="Cadastro" method="post" onsubmit="return validarFormularioTag()">
+                            <h1 class="mt-1" style="font-size: 20px;">@ViewData["Acao"]</h1>
+                            <div class="form-group">
+                                <label for="descricao">Descrição:</label>
+                                <input type="text" id="Descricao" name="Descricao" class="form-control" value="@ViewData["Descricao"]" maxlength="30" oninput="limitarDescricao()" />
+                                <span asp-validation-for="Descricao" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <p id="contadorDescricao"></p>
+                            </div>
+                            <input type="hidden" id="acao" name="Acao" value="@ViewData["Acao"]" />
+
+                            <div class="row">
+                                @if (oTexto == "Cadastrar" || oTexto == "Salvar")
+                                {
+                                    <div class="col-md-6">
+                                        <div class="text-left">
+                                            <button class="btn btn-sm btn-success my-2 my-sm-0 form-control form-control-sm" type="submit">
+                                                @oTexto
+                                            </button>
+                                        </div>
+                                    </div>
+                                }
+                                <div class="col-md-6">
+                                    <div class="text-left">
+                                        <a class="btn btn-sm btn-secondary my-2 my-sm-0 form-control form-control-sm" asp-action="Index" data-toggle="tooltip" title="Editar">Cancelar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

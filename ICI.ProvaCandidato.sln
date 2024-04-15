@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICI.ProvaCandidato.Negocio"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICI.ProvaCandidato.UI", "ICI.ProvaCandidato.UI\ICI.ProvaCandidato.UI.csproj", "{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICI.ProvaCandidato.Modal.UI", "ICI.ProvaCandidato.Modal.UI\ICI.ProvaCandidato.Modal.UI.csproj", "{664B0763-9342-43B1-8E54-5F94A01BE9AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEF59A36-CA70-46FE-B94E-07A9D84D84C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664B0763-9342-43B1-8E54-5F94A01BE9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664B0763-9342-43B1-8E54-5F94A01BE9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664B0763-9342-43B1-8E54-5F94A01BE9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664B0763-9342-43B1-8E54-5F94A01BE9AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
